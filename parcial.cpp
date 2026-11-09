@@ -39,3 +39,28 @@ void RemoveEveryThird(Node *&head)
         position++;
     }
 };
+
+void DuplicateNegativeNodes(Node *&head)
+{
+    Node *current = head;
+    while (current != nullptr)
+    {
+        if (current->data < 0)
+        {
+            Node *newNode = new Node(current->data);
+            newNode->next = current->next;
+            newNode->prev = current;
+
+            if (current->next != nullptr)
+            {
+                current->next->prev = newNode;
+            }
+            current->next = newNode;
+            current = newNode->next;
+        }
+        else
+        {
+            current = current->next;
+        }
+    }
+};
