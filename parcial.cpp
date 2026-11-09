@@ -31,7 +31,7 @@ void RemoveEveryThird(Node *&head)
             }
             if (current->next != nullptr)
             {
-                current->next->prev = current->prev
+                current->next->prev = current->prev;
             }
             delete current;
         }
