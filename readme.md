@@ -14,8 +14,7 @@ Justificacion:
 
 1.  Su complejidad temporal es de: O(n log n)
     ​
-    ​2)
-    El numero de comparaciones aumenta un poco mas del doble
+​2. El numero de comparaciones aumenta un poco mas del doble
 
 ​Justificacion:
 ​1. El primer for (i) va desde 0 hasta que sea menor a n haciendo n comparaciones, mientras que el segundo for (j) se multiplica por 3 haciendo log3(n) comparaciones, entonces hace n\*log3(n) comparaciones
