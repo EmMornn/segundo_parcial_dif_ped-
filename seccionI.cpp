@@ -47,7 +47,7 @@ void DuplicateNegativeNodes(Node *&head)
     {
         if (current->data < 0)
         {
-            Node *newNode = new Node(current->data);
+            Node *newNode = new Node;
             newNode->next = current->next;
             newNode->prev = current;
 
